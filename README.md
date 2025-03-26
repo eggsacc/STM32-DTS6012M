@@ -1,10 +1,10 @@
 # DTS6012M TOF module
 The [DTS6012M TOF module](https://item.taobao.com/item.htm?id=751037798640&spm=a21m98.27004841&skuId=5176533692473) is a long range, inexpensive & compact LIDAR sensor. 
 
-![image](Sensor.png)
+![image](Attachments/Sensor.png)
 
 # Datasheet
-- [DTS6012M Datasheet (Chinese)](DTS6012Mdatasheet.pdf)
+- [DTS6012M Datasheet (Chinese)](Attachments/DTS6012Mdatasheet.pdf)
 
 # Using the library
 ### DTS6012M sensor struct
@@ -14,7 +14,7 @@ The `DTS6012M` struct holds the I2C handle and raw 16-bit sensor data.
 typedef struct
 {
     I2C_HandleTypeDef* i2c_handle;
-    uint16_t raw_data;
+    uint16_t raw_distance;
 } DTS6012M;
 ```
 
